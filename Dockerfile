@@ -1,3 +1,4 @@
-FROM node:12.22.1
+FROM node:14.19.3
 
-RUN npm install -g miniprogram-ci yargs
+RUN npm -g config set user root
+RUN npm install -g miniprogram-ci@1.8.25
